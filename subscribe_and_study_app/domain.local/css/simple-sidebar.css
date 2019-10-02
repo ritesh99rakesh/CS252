@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden;
+    background-image: url("../img/study4.jpg");
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background-image: url("../img/study4.jpg");
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+    opacity: 0.8;
+    font-weight: bolder;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.jumbotron {
+    opacity: 0.95;
+}
+
+.navbar {
+    opacity: 0.8;
+}
+
+.dropdown-toggle {
+    font-weight: bolder;
+}
